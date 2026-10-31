@@ -3,46 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página web</title>
+    <title>Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1 id="titulo-principal">Presentación Personal</h1>
+        <a href="#Inicio">Rodrigo Espinoza</a>
         <nav>
             <ul>
-                <li><a href="#inicio">Información Personal</a></li>
-                <li><a href="#metas">Metas</a></li>
-                <li><a href="#tecnologias">Tecnologías Aprendidas</a></li>
+                <li><a href="#Tecnologias">Tecnologias</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
         <button id="boton-modo">Modo oscuro</button>
     </header>
-    
     <main>
-        <section id="inicio">
-            <h2>Me Presento:</h2>
-            <p>Me llamo Rodrigo Espinoza Cruz, tengo 23 años y me encuentro tratando de aprender HTML por el momento.</p>
-            <p>Mi fecha de cumpleaños es : <strong  id="texto-agregado" style="display: none;"></strong> </p>
-            <button id="boton-agregar">Mostrar fecha de cumpleaños</button>
-            <button id="boton-toggle">Mostrar Mensaje</button>
-            <p id="mensaje-secreto" style="display: none;">🎉 ¡Sorpresa! Este mensaje estaba oculto hasta que hiciste clic.</p>
+        <section id="Inicio">
+            <h1>Hola, soy Rodrigo Espinoza</h1>
+            <P><Strong>Estudiante de Ingenieria de Sistemas | Desarrollador Web</Strong></P>
+            <em>Apasionado por construir soluciones web eficientes...</em>
+            <div class="contactoPrincipal">
+                <a href="https://github.com/rodrigoespi" target="_blank">GitHub</a>
+                <a href="">Descargar CV</a>
+            </div>
         </section>
-        
-        <section id="metas" class="destacada">
-            <h2>Mis metas</h2>
-            <ol>
-                <li>Aprender HTML, CSS y JavaScript</li>
-                <li>Aprender GitHub y React</li>
-                <li>Hacer un gran portafolio</li>
-                <li>Encontrar trabajo</li> 
-            </ol>
+        <section id="Tecnologias">
+            <h2>Stack Tecnologico</h2>
+            <div class="contenedor-tarjetas">
+                <div class="tarjetas-tecnologias">
+                    <h3>Front-End</h3>
+                    <p>HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="tarjetas-tecnologias">
+                    <h3>Backend</h3>
+                    <p>Java, Spring Boot</p>
+                </div>
+                <div class="tarjetas-tecnologias">
+                    <h3>Herramientas</h3>
+                    <p>Git, GitHub, VS Code</p>
+                </div>
+            </div>
+        </section>
+        <section id="Proyectos">
+            <h2>Proyectos Destacados</h2>
+            <div class="contenedor-proyectos">
+                <div class="tarjeta-proyecto">
+                    <h3>Portafolio Web Interactivo</h3>
+                    <p>Sitio web personal diseñado para empleabilidad, con interactividad en JavaScript.</p>
+                    <div class="links-proyecto">
+                        <a href="https://rodrigoespi.github.io/Portafolio/" target="_blank">Ver en Vivo</a>
+                        <a href="https://github.com/rodrigoespi/Portafolio" target="_blank">Código Fuente</a>
+                    </div>
+                </div>
+                <div class="tarjeta-proyecto">
+                    <h3>Yuzu CRM</h3>
+                    <p>Aplicación web de gestión orientada a restaurantes, desarrollada con Java, Spring Boot y componentes web modernos.</p>
+                    <div class="links-proyecto">
+                        <a href="https://github.com/rodrigoespi" target="_blank">Código Fuente</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    
-    <footer>
-        <p>Rodrigo Espinoza Cruz | <a href="https://www.instagram.com/rodrigo_ec/" target="_blank">Instagram</a></p>
-        <p>&copy; 2026 - Todos los derechos reservados</p>
+
+    <footer id="Contacto">
+        <p>&copy; 2026 - Rodrigo Espinoza Cruz. Todos los derechos reservados.</p>
+        <div class="redes-footer">
+            <a href="https://github.com/rodrigoespi" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
     </footer>
     <script src="app.js"></script>
 </body>
