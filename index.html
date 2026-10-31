@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Presentación Personal</h1>
+        <h1 id="titulo-principal">Presentación Personal</h1>
         <nav>
             <ul>
                 <li><a href="#inicio">Información Personal</a></li>
@@ -16,12 +16,17 @@
                 <li><a href="#tecnologias">Tecnologías Aprendidas</a></li>
             </ul>
         </nav>
+        <button id="boton-modo">Modo oscuro</button>
     </header>
     
     <main>
         <section id="inicio">
             <h2>Me Presento:</h2>
             <p>Me llamo Rodrigo Espinoza Cruz, tengo 23 años y me encuentro tratando de aprender HTML por el momento.</p>
+            <p>Mi fecha de cumpleaños es : <strong  id="texto-agregado" style="display: none;"></strong> </p>
+            <button id="boton-agregar">Mostrar fecha de cumpleaños</button>
+            <button id="boton-toggle">Mostrar Mensaje</button>
+            <p id="mensaje-secreto" style="display: none;">🎉 ¡Sorpresa! Este mensaje estaba oculto hasta que hiciste clic.</p>
         </section>
         
         <section id="metas" class="destacada">
@@ -39,5 +44,6 @@
         <p>Rodrigo Espinoza Cruz | <a href="https://www.instagram.com/rodrigo_ec/" target="_blank">Instagram</a></p>
         <p>&copy; 2026 - Todos los derechos reservados</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
